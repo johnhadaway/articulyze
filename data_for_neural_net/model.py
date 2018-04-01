@@ -3,7 +3,7 @@ from keras.layers import Dense
 import numpy
 from sklearn import preprocessing
 import pandas as pd
-
+from sklearn.externals import joblib
 
 # fix random seed for reproducibility
 numpy.random.seed(7)
@@ -14,9 +14,15 @@ dataset = numpy.loadtxt("reformatted.csv", delimiter=",")
 X = dataset[:,0:11]
 Y = dataset[:,11]
 
+'''
 min_max_scaler = preprocessing.MinMaxScaler()
-scaled_X = min_max_scaler.fit_transform(X)
+min_max_scaler.fit(X)
+scaled_X = min_max_scaler.transform(X)
+scaler_filename = "scaler.save"
+joblib.dump(min_max_scaler, scaler_filename)
+'''
 
+scaled_X = X
 # create model
 model = Sequential()
 model.add(Dense(11, input_dim=11, activation='relu'))

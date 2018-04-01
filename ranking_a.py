@@ -8,6 +8,8 @@ from nltk.tokenize import RegexpTokenizer
 import json
 from keras.models import model_from_json
 from sklearn import preprocessing
+from sklearn.externals import joblib
+
 
 
 ds = pd.read_csv('data\pul_dset.csv')
@@ -268,11 +270,13 @@ def similarity2(new_article):
     print("Loaded model from disk")
     loaded_model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
-    min_max_scaler = preprocessing.MinMaxScaler()
+    '''
+    min_max_scaler = joblib.load("data_for_neural_net/scaler.save")
     scaled_X = min_max_scaler.fit_transform(new_article_values)
+    '''
 
-    predictions = loaded_model.predict(scaled_X)
-    return predictions
+    predictions = loaded_model.predict(new_article_values)
+    return predictions.item(0)
 
 def ranking(path, num_to_return = None, threshold = None):
     """
@@ -314,5 +318,5 @@ def ranking(path, num_to_return = None, threshold = None):
 # print(ranking("data\g_test_yemen2.csv"))
 
 print(len(l_articles))
-a = similarity2(l_articles[14])
+a = similarity2(l_articles[80])
 print(a)
