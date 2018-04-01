@@ -12,4 +12,10 @@ print("Loaded model from disk")
 
 loaded_model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
 
+dataset = numpy.loadtxt("reformatted.csv", delimiter=",")
+# split into input (X) and output (Y) variables
+X = dataset[:,0:11]
+
+print(X)
 predictions = loaded_model.predict(X)
+#print(predictions)
