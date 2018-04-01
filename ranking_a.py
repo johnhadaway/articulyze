@@ -233,7 +233,7 @@ def similarity(new_article, pul_averages):
 
 	return abs((sum(deviations)/len(deviations)))
 
-def similarity2(new_article, pul_averages): 
+def similarity2(new_article): 
 	"""
 	- FUNCTION: returns the similairty of a single article to the pulitzer articles 
 	- INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
