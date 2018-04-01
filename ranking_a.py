@@ -6,6 +6,9 @@ from collections import Counter
 from operator import itemgetter
 from nltk.tokenize import RegexpTokenizer
 import json
+from keras.models import model_from_json
+from sklearn import preprocessing
+
 
 ds = pd.read_csv('data\pul_dset.csv')
 ds = ds.dropna()
@@ -229,6 +232,43 @@ def similarity(new_article, pul_averages):
 		weights.append(new_article_values[key][1])
 
 	return abs((sum(deviations)/len(deviations)))
+
+def similarity2(new_article, pul_averages): 
+	"""
+	- FUNCTION: returns the similairty of a single article to the pulitzer articles 
+	- INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
+	- RV: similarity score (absolute value of average deviation from pulitzer averages)
+	"""
+
+	new_sentence_sentiment = tb_sentence_sentiment(new_article)
+	new_article_sentiment = tb_article_sentiment(new_article)
+	# dictionary mapping index to tuple containing (article score, weight for metric)
+	new_article_values = np.array([[flesch_index(new_article),
+		new_sentence_sentiment[0],
+		new_sentence_sentiment[1],
+		new_article_sentiment[0],
+		new_article_sentiment[1],
+		word_count(new_article),
+		average_characters_per_word(new_article),
+		percentage_spache(new_article),
+		percentage_weasel(new_article),
+		percentage_dale_chall(new_article),
+		dale_chall(new_article)]])
+
+	json_file = open('data_for_neural_net/model.json', 'r')
+	loaded_model_json = json_file.read()
+	json_file.close()
+	loaded_model = model_from_json(loaded_model_json)
+	# load weights into new model
+	loaded_model.load_weights("data_for_neural_net/model.h5")
+	print("Loaded model from disk")
+	loaded_model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+
+	min_max_scaler = preprocessing.MinMaxScaler()
+	scaled_X = min_max_scaler.fit_transform(new_article_values)
+
+	predictions = loaded_model.predict(scaled_X)
+	return predictions.item(0)
 
 def ranking(path, num_to_return = None, threshold = None):
 	"""

@@ -1,6 +1,9 @@
 from keras.models import Sequential
 from keras.layers import Dense
 import numpy
+from sklearn import preprocessing
+import pandas as pd
+
 
 # fix random seed for reproducibility
 numpy.random.seed(7)
@@ -11,10 +14,14 @@ dataset = numpy.loadtxt("reformatted.csv", delimiter=",")
 X = dataset[:,0:11]
 Y = dataset[:,11]
 
+min_max_scaler = preprocessing.MinMaxScaler()
+scaled_X = min_max_scaler.fit_transform(X)
 
 # create model
 model = Sequential()
 model.add(Dense(11, input_dim=11, activation='relu'))
+model.add(Dense(8, activation='relu'))
+model.add(Dense(8, activation='relu'))
 model.add(Dense(8, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 
@@ -22,10 +29,10 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Fit the model
-model.fit(X, Y, epochs=300, batch_size=10)
+model.fit(scaled_X, Y, epochs=150, batch_size=10)
 
 # evaluate the model
-scores = model.evaluate(X, Y)
+scores = model.evaluate(scaled_X, Y)
 print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
 
 # serialize model to JSON
@@ -35,3 +42,7 @@ with open("model.json", "w") as json_file:
 # serialize weights to HDF5
 model.save_weights("model.h5")
 print("Saved model to disk")
+
+ans = model.predict(scaled_X)
+df = pd.DataFrame(data=ans)
+df.to_csv('data.csv')
