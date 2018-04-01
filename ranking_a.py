@@ -245,17 +245,17 @@ def similarity2(new_article):
     # dictionary mapping index to tuple containing (article score, weight for metric)
 
     new_article_values = np.array([[
-        flesch_index(new_article),
-        new_sentence_sentiment[0],
-        new_sentence_sentiment[1],
-        new_article_sentiment[0],
-        new_article_sentiment[1],
-        word_count(new_article),
-        average_characters_per_word(new_article),
-        percentage_spache(new_article),
-        percentage_weasel(new_article),
-        percentage_dale_chall(new_article),
-        dale_chall(new_article)]])
+    	new_article_sentiment[0],
+    	new_article_sentiment[1],
+    	average_characters_per_word(new_article),
+    	dale_chall(new_article), 
+    	percentage_dale_chall(new_article),
+    	flesch_index(new_article),
+    	new_sentence_sentiment[0],
+    	new_sentence_sentiment[1],
+    	percentage_spache(new_article),
+    	percentage_weasel(new_article),
+    	word_count(new_article)]])
 
     print(new_article_values)
 
