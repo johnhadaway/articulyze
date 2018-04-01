@@ -1,16 +1,12 @@
-import nltk as nl 
-import pandas as pd 
+import nltk as nl
+import pandas as pd
 import numpy as np
-from textblob import TextBlob  
+from textblob import TextBlob
 from collections import Counter
 from operator import itemgetter
 from nltk.tokenize import RegexpTokenizer
 import json
 from keras.models import model_from_json
-from sklearn import preprocessing
-from sklearn.externals import joblib
-
-
 
 ds = pd.read_csv('data\pul_dset.csv')
 ds = ds.dropna()
@@ -20,10 +16,20 @@ spache_words = json.load(open('data\spache_words.json'))
 dale_chall_words = json.load(open('data\dale_chall_words.json'))
 weasel_words = [word.strip() for word in open('data\weasel_phrases.txt').readlines()]
 
+
+json_file = open('data_for_neural_net/model.json', 'r')
+loaded_model_json = json_file.read()
+json_file.close()
+loaded_model = model_from_json(loaded_model_json)
+# load weights into new model
+loaded_model.load_weights("data_for_neural_net/model.h5")
+print("Loaded model from disk")
+loaded_model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+
 ### AUXILLARY FUNCTIONS ###
 ###########################
 
-def tokenize_article(article): 
+def tokenize_article(article):
 
     """
     - FUNCTION: auxillary function to tokenize articles
@@ -33,7 +39,7 @@ def tokenize_article(article):
 
     return RegexpTokenizer(r'\w+').tokenize(article)
 
-def flesch_index(article): 
+def flesch_index(article):
 
     """ 
     - FUNCTION: flesch_index calculation for an article
@@ -41,12 +47,12 @@ def flesch_index(article):
     - RV: flesch index
     """
 
-    c = Counter(article) 
+    c = Counter(article)
     sentence_count = c['.'] + c[':'] + c['!'] + c['?']
-    word_count = len(article.split()) 
-    syllable_count = 0 
+    word_count = len(article.split())
+    syllable_count = 0
 
-    for word_unit in article.split(): 
+    for word_unit in article.split():
         word_c = Counter(word_unit)
         for end in ["es", "ed", "e"]:
             if word_unit.endswith(end):
@@ -57,9 +63,9 @@ def flesch_index(article):
             syllable_count += 1
 
     return float((206.835 - (1.015*(word_count/sentence_count)) - \
-        (84.6*(syllable_count/word_count))))
+                  (84.6*(syllable_count/word_count))))
 
-def tb_sentence_sentiment(article): 
+def tb_sentence_sentiment(article):
 
     """
     - FUNCTION: returns the average sentence polarity and subjectivity [TextBlob]
@@ -74,9 +80,9 @@ def tb_sentence_sentiment(article):
         sentence_polarity.append(sentence.sentiment.polarity)
         sentence_subjectivity.append(sentence.sentiment.subjectivity)
     return (float(sum(sentence_polarity)/len(sentence_polarity)),
-        float(sum(sentence_subjectivity)/len(sentence_subjectivity)))
+            float(sum(sentence_subjectivity)/len(sentence_subjectivity)))
 
-def tb_article_sentiment(article): 
+def tb_article_sentiment(article):
 
     """
     - FUNCTION: returns the article polarity and subjectivity [TextBlob]
@@ -110,7 +116,7 @@ def average_characters_per_word(article):
     characters_in_word = [len(word) for word in tokens]
     return sum(characters_in_word)/len(characters_in_word)
 
-def percentage_spache(article): 
+def percentage_spache(article):
 
     """
     - FUNCTION: returns the percentage of words in an article that are
@@ -149,9 +155,9 @@ def percentage_weasel(article):
                 weasel_occurences += 1
 
     return float(weasel_occurences/len(RegexpTokenizer(r'\w+').
-        tokenize(article)))
+                                       tokenize(article)))
 
-def percentage_dale_chall(article): 
+def percentage_dale_chall(article):
 
     """
     - FUNCTION: returns the percentage of dale chall familiar words in an article
@@ -170,7 +176,7 @@ def percentage_dale_chall(article):
 
     return float(dale_chall_occurences/len(tokens))
 
-def dale_chall(article): 
+def dale_chall(article):
 
     """
     - FUNCTION: returns the dale chall score of an article (source for equation: wikipedia)
@@ -192,15 +198,15 @@ def dale_chall(article):
 
     if difficult_words_p > 5:
         return ((0.1579)*(difficult_words_p)) + \
-        ((0.0496)*(len(tokens)/sentence_count)) + 3.6365
+               ((0.0496)*(len(tokens)/sentence_count)) + 3.6365
     else:
         return ((0.1579)*(difficult_words_p)) + \
-        ((0.0496)*(len(tokens)/sentence_count))
+               ((0.0496)*(len(tokens)/sentence_count))
 
 ### RANKING ALGORITHIM ### 
 ##########################
 
-def similarity(new_article, pul_averages): 
+def similarity(new_article, pul_averages):
     """
     - FUNCTION: returns the similairty of a single article to the pulitzer articles
     - INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
@@ -213,17 +219,17 @@ def similarity(new_article, pul_averages):
 
     # dictionary mapping index to tuple containing (article score, weight for metric)
     new_article_values = {'Flesch' : (flesch_index(new_article), 1),
-        'S_Polarity' : (new_sentence_sentiment[0], 1),
-        'S_Subjectivity' : (new_sentence_sentiment[1], 1),
-        'A_Polarity' : (new_article_sentiment[0], 0.1),
-        'A_Subjectivity' : (new_article_sentiment[1], 0.1),
-        'Word_Count' : (word_count(new_article), 1),
-        'Characters' : (average_characters_per_word(new_article), 1),
-        'Spache_Percentage' : (percentage_spache(new_article), 1),
-        'Weasel_Percentage' : (percentage_weasel(new_article), 1),
-        'Dale_Chall_Percentage' : (percentage_dale_chall(new_article), 1),
-        'Dale_Chall' : (dale_chall(new_article), 1)
-        }
+                          'S_Polarity' : (new_sentence_sentiment[0], 1),
+                          'S_Subjectivity' : (new_sentence_sentiment[1], 1),
+                          'A_Polarity' : (new_article_sentiment[0], 0.1),
+                          'A_Subjectivity' : (new_article_sentiment[1], 0.1),
+                          'Word_Count' : (word_count(new_article), 1),
+                          'Characters' : (average_characters_per_word(new_article), 1),
+                          'Spache_Percentage' : (percentage_spache(new_article), 1),
+                          'Weasel_Percentage' : (percentage_weasel(new_article), 1),
+                          'Dale_Chall_Percentage' : (percentage_dale_chall(new_article), 1),
+                          'Dale_Chall' : (dale_chall(new_article), 1)
+                          }
 
     deviations = []
     weights = []
@@ -235,7 +241,7 @@ def similarity(new_article, pul_averages):
 
     return abs((sum(deviations)/len(deviations)))
 
-def similarity2(new_article): 
+def similarity2(new_article):
     """
     - FUNCTION: returns the similairty of a single article to the pulitzer articles
     - INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
@@ -247,33 +253,19 @@ def similarity2(new_article):
     # dictionary mapping index to tuple containing (article score, weight for metric)
 
     new_article_values = np.array([[
-    	new_article_sentiment[0],
-    	new_article_sentiment[1],
-    	average_characters_per_word(new_article),
-    	dale_chall(new_article), 
-    	percentage_dale_chall(new_article),
-    	flesch_index(new_article),
-    	new_sentence_sentiment[0],
-    	new_sentence_sentiment[1],
-    	percentage_spache(new_article),
-    	percentage_weasel(new_article),
-    	word_count(new_article)]])
+        new_article_sentiment[0],
+        new_article_sentiment[1],
+        average_characters_per_word(new_article),
+        dale_chall(new_article),
+        percentage_dale_chall(new_article),
+        flesch_index(new_article),
+        new_sentence_sentiment[0],
+        new_sentence_sentiment[1],
+        percentage_spache(new_article),
+        percentage_weasel(new_article),
+        word_count(new_article)]])
 
-    print(new_article_values)
-
-    json_file = open('data_for_neural_net/model.json', 'r')
-    loaded_model_json = json_file.read()
-    json_file.close()
-    loaded_model = model_from_json(loaded_model_json)
-    # load weights into new model
-    loaded_model.load_weights("data_for_neural_net/model.h5")
-    print("Loaded model from disk")
-    loaded_model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
-
-    '''
-    min_max_scaler = joblib.load("data_for_neural_net/scaler.save")
-    scaled_X = min_max_scaler.fit_transform(new_article_values)
-    '''
+    #print(new_article_values)
 
     predictions = loaded_model.predict(new_article_values)
     return predictions.item(0)
@@ -289,34 +281,36 @@ def ranking(path, num_to_return = None, threshold = None):
 
     pul_averages = json.load(open('data\pul_averages.json'))
     article_ds = pd.read_csv(path,
-        encoding = 'latin1').dropna().drop_duplicates(subset = ['URL', 'Text'])
+                             encoding = 'latin1').dropna().drop_duplicates(subset = ['URL', 'Text'])
     article_score_list = []
 
     for index, row in article_ds.iterrows():
         article_score_list.append([row['Text'][0], row['URL'],
-            (1 - similarity(str(row['Text']), pul_averages))])
+                                   similarity2(str(row['Text']))])
 
     if (num_to_return != None) & (threshold == None):
         return sorted(article_score_list, key = itemgetter(2),
-            reverse = True)[0:num_to_return]
+                      reverse = True)[0:num_to_return]
     elif (threshold != None) & (num_to_return == None):
         threshold_list = []
         for article in article_score_list:
             if article[2] >= threshold:
                 threshold_list.append(article)
         return sorted(threshold_list, key = itemgetter(2),
-            reverse = True)[0:len(threshold_list)]
+                      reverse = True)[0:len(threshold_list)]
     elif (num_to_return == None) & (threshold == None):
         num_to_return = len(article_score_list)
         return sorted(article_score_list, key = itemgetter(2),
-            reverse = True)[0:num_to_return]
+                      reverse = True)[0:num_to_return]
     else:
         raise Exception("ERROR: invalid parameters")
         return None
 
 
-# print(ranking("data\g_test_yemen2.csv"))
+print(ranking("data\g_test_yemen2.csv"))
 
+'''
 print(len(l_articles))
 a = similarity2(l_articles[80])
 print(a)
+'''
