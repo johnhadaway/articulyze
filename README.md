@@ -10,3 +10,6 @@ Using Logistic Regression with just word counts gets you ~87% accuracy on predic
 
 ### Word Count, Flesch
 Over 10 runs averages ~87% accuracy, high of 90%.
+
+### (Na) 2 node output 
+With 2 node output, accuracy 87%, 7 percent miss rate when applied to pulitzer-winning dataset 
