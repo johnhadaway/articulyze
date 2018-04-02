@@ -13,4 +13,6 @@ Over 10 runs averages ~87% accuracy, high of 90%.
 
 ## Feedforward neural net
 ### (Na) 2 node output 
-With 2 node output, accuracy 87%, 7 percent miss rate when applied to pulitzer-winning dataset 
+With 2 node output, accuracy 87%, 7 percent miss rate when applied to pulitzer-winning dataset
+
+## After normalizing data the accurate is always 90%+, will test more indepth later
