@@ -1,0 +1,9 @@
+html2text
+Keras
+matplotlib
+nltk
+numpy
+pandas
+scikit-learn
+tensorflow
+textblob
