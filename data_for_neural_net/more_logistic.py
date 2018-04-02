@@ -22,13 +22,13 @@ options = {}
 for key in list(index.keys()):
     options[key] = False
 
-# ======== EDIT THIS: set which inputs you want ; change output_file name ====
+# ======== EDIT THIS: set which inputs you want ; change output_file name for tracking probabilities ====================
 options['word_count'] = True
 options['flesch'] = True
 
 output_file = "flesch_logistic.csv"
 
-# ======= don't need to edit anything below here =====================
+# ======= don't need to edit anything below here ========================================================================
 
 inputs = dict((key,index[key]) for key,value in options.items() if value == True)
 n_inputs = len(inputs)
