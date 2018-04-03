@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- stylesheets -->
     <link rel="stylesheet" href = "css/bootstrap.min.css">
     <link rel="stylesheet" href = "css/bootstrap-grid.css">
-    <style>
-        .col-centered{
-            float: none;
-            margin: 0 auto;
-        }
-        .parent-row-style{
-            border: 1px solid;
-        }
-        .parent-col-style{
-            border: 1px solid;
-        }
-        
-        .first-cell-image{
-            width:100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href = "css/art-style.css">
 </head>
 <body>
-    <div class="container-fluid" style="border: 1px solid">
-        <div class="row parent-row-style">
-            <div class="col-12 parent-col-style">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Countries</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
                 <img class="img-responsive first-cell-image" src="img/first.png", alt="">
             </div>
         </div>
-        <div class="row parent-row-stlye">
+        <div class="row parent-row-style">
             <div class="col-12 parent-col-style">
-                Displaying countries 
+                About 1
             </div>
         </div>
         <div class="row parent-row-style">
             <div class="col-12 parent-col-style">
-                About
+                About 2
             </div>
-        </div> 
+        </div>
+        <div class="row parent-row-style">
+            <div class="col-12 parent-col-style">
+                About 3
+            </div>
+        </div>
     </div>
 </body>
 </html>

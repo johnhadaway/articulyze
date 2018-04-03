@@ -1,0 +1,19 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    }
+        
+/* for testing */
+.parent-row-style{ 
+    border: 1px solid;
+    }
+        
+/* for testing */
+.parent-col-style{
+    border: 1px solid;
+    }
+        
+.first-cell-image{
+    width:100%;
+    height: 100%;
+    }
