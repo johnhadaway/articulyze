@@ -10,19 +10,19 @@
 }
 
 .art-back-grey-style{
-    background-color: #9F9AA4;
+    background-color: #969696;
 }
 
 .art-back-blue-style{
-    background-color: #ABE9F4;
+    background-color: #56CBF9;
 }
 
 .art-back-green-style{
-    background-color: #B2F29D;
+    background-color: #5DC67D;
 }
 
-.art-back-orange-style{
-    background-color: #FE8961;
+.art-back-red-style{
+    background-color: #764248;
 }
         
 /* body */
@@ -46,3 +46,19 @@ body {
     -ms-user-select: none;
     }
 
+.art-parent-row-height{
+    height: 120vh;
+}
+
+.art-parent-row-half-height{
+    height: 60vh;
+}
+
+.art-parent-row-third-height{
+    height: 40vh;
+}
+
+.art-parent-row-fourth-height{
+    height: 30vh;
+}
+    

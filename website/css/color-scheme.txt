@@ -1,10 +1,10 @@
 color scheme: 
-granny-smith apple (green): #B2F29D
-blue lagoon (blue): #ABE9F4
-pink-orange: #FE8961
+paris green (green): #5DC67D
+maya blue (blue): #56CBF9
+tuscan red: #764248
 white: #FFFFFF
-manatee: #9F9AA4
+spanish gray: #969696
 
-use granny smith and blue lagoon to make the earth;
-use pink-orange (and any other colors in the pallete) to make the logo
+use green and blue to make the earth;
+use tuscan red (and any other colors in the pallete) to make the logo
 
