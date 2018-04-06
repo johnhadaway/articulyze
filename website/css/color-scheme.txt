@@ -1,10 +1,20 @@
 color scheme: 
-paris green (green): #5DC67D
-maya blue (blue): #56CBF9
-tuscan red: #764248
 white: #FFFFFF
-spanish gray: #969696
+trolley grey: #7E8089
+light grey: #D1D1D1 
+tea-green: #C4F1BE
+red-brown: #AA272B
 
-use green and blue to make the earth;
-use tuscan red (and any other colors in the pallete) to make the logo
+
+use tea-green and red-brown to make the logo. I need you to make a few versions of the logo:
+
+1) one for a twitter dp (an A with a white / one of the grey's as a background - with half of the A being tea-green and the other half being red-brown)
+2) a full logo ("Articulyze"; i would like you to feature both tea-green and red-brown in the logo ~ those are the two main colors, for branding purposes, i want the red-brown to dominante, the tea-green should exist but be subsidiary)
+3) one for the website navbar / other website parts ~ a more compact version of the logo (PNG - no background)
+4) can you provide the A that i describe for the twitter dp as a PNG without a background, too?
+
+second task (equally important): 
+
+http://interactive.unocha.org/publication/globalhumanitarianoverview/ if you go to this link, you will see a list of 21 countries under humanitarian response plans. I need an image (that i will use as a button on the website) for each of them, featuring a map and the country's name. You should be able to make a template, and it should be easy from there. Strict adherely to the color scheme. Maybe light grey as the background and red-brown as the map filled in (no details for the map, just the shape, colored in). Ill pm you what i want as a drawing. Also choose a font for me: https://bootstrapbay.com/blog/google-web-fonts/. It has to be one of these (too hard to implement otherwise.) Use the font for the country name label, and make sure it can coexist with the logo. Thank you. I love you. I believe in you. I may need some other things in the future, i.e a gif for the about page / a background for the homepage. If it's too much for you at that point, i will get it professionally done / pay someone. Let me know if I can edit your EE. 
+
 
