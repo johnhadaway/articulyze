@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+body,
+input,
+button,
+select,
+textarea,
+.navbar-search .search-query {
+  font-family: "PT Serif", sans-serif;
+}
+
 /* useful */
 .col-centered{
     float: none;
@@ -8,6 +19,12 @@
     padding-right: 0px;
     padding-left: 0px;
 }
+
+.art-transparent{
+    opacity: 0;
+}
+
+/* coloring */
 
 .art-style-back-lgrey{
     background-color: #D1D1D1;
@@ -45,39 +62,47 @@ body {
 }
 
 /* more useful */
-.art-style-row-standard-height{
+.art-style-standard-height{
     height: 120vh;
 }
 
-.art-style-row-100-height{
+.art-style-100-height{
     height: 100vh;
 }
 
-.art-style-row-60-height{
+.art-style-60-height{
     height: 60vh;
 }
 
-.art-style-row-40-height{
+.art-style-40-height{
     height: 40vh;
 }
 
-.art-style-row-30-height{
+.art-style-30-height{
     height: 30vh;
 }
 
-.art-style-row-90-height{
+.art-style-90-height{
     height: 90vh;
 }
 
-.art-style-row-70-height{
+.art-style-70-height{
     height: 70vh;
 }
 
-.art-style-row-20-height{
+.art-style-20-height{
     height: 20vh;
 }
 
-.art-style-row-210-height{
+.art-style-210-height{
     height: 210vh;
+}
+
+.art-style-50-height{
+    height: 50vh;
+}
+
+.art-style-5-height{
+    height: 5vh;
 }
     
