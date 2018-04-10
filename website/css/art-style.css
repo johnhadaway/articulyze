@@ -30,8 +30,8 @@ textarea,
 
 /* coloring */
 
-.art-style-back-lgrey{
-    background-color: #D1D1D1;
+.art-style-back-black{
+    background-color: #191919;
 }
 
 .art-style-back-grey{
@@ -61,6 +61,11 @@ textarea,
 .art-style-text-grey{
     color: #7E8089;
 }
+
+.art-style-text-black{
+    color: #191919;
+}
+
 /* body */
 body {
     padding-top: 55px;
