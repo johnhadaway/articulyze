@@ -177,7 +177,6 @@ def percentage_dale_chall(article):
     return float(dale_chall_occurences/len(tokens))
 
 def dale_chall(article):
-
     """
     - FUNCTION: returns the dale chall score of an article (source for equation: wikipedia)
     - INPUT PARAMETERS: article (string: article text)
@@ -241,7 +240,7 @@ def similarity(new_article, pul_averages):
 
     return abs((sum(deviations)/len(deviations)))
 
-def similarity2(new_article):
+def similarity_ml(new_article):
     """
     - FUNCTION: returns the similairty of a single article to the pulitzer articles
     - INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
@@ -279,35 +278,32 @@ def ranking(path, num_to_return = None, threshold = None):
     length dependent on num_to_return parameter
     """
 
-    pul_averages = json.load(open('data\pul_averages.json'))
+    # pul_averages = json.load(open('data\pul_averages.json')) -- only needed
     article_ds = pd.read_csv(path,
                              encoding = 'latin1').dropna().drop_duplicates(subset = ['URL', 'Text'])
     article_score_list = []
 
     for index, row in article_ds.iterrows():
-        article_score_list.append([row['Text'][0], row['URL'],
-                                   similarity2(str(row['Text']))])
+        article_score_list.append([row['Concerning'], row['URL'], row['Title'],
+                                   similarity_ml(str(row['Text']))])
 
     if (num_to_return != None) & (threshold == None):
-        return sorted(article_score_list, key = itemgetter(2),
+        return sorted(article_score_list, key = itemgetter(3),
                       reverse = True)[0:num_to_return]
     elif (threshold != None) & (num_to_return == None):
         threshold_list = []
         for article in article_score_list:
             if article[2] >= threshold:
                 threshold_list.append(article)
-        return sorted(threshold_list, key = itemgetter(2),
+        return sorted(threshold_list, key = itemgetter(3),
                       reverse = True)[0:len(threshold_list)]
     elif (num_to_return == None) & (threshold == None):
         num_to_return = len(article_score_list)
-        return sorted(article_score_list, key = itemgetter(2),
+        return sorted(article_score_list, key = itemgetter(3),
                       reverse = True)[0:num_to_return]
     else:
         raise Exception("ERROR: invalid parameters")
         return None
-
-
-print(ranking("data\g_test_yemen2.csv"))
 
 '''
 print(len(l_articles))

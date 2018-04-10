@@ -49,6 +49,18 @@ textarea,
 .art-style-back-white{
     background-color: #FFFFFF;
 }
+
+.art-style-text-red{
+    color: #AA272B;
+}
+
+.art-style-text-white{
+    color: #FFFFFF;
+}
+
+.art-style-text-grey{
+    color: #7E8089;
+}
 /* body */
 body {
     padding-top: 55px;
@@ -59,14 +71,15 @@ body {
 }
  
 /* about page elements */
-.art-back-img-home {
-    background-image: url(../img/temp.png);
+.art-back-img-back1 {
+    background-image: url(../img/back2.png);
     background-size:cover;
     background-repeat: no-repeat;
+    opacity: 0.9;
 }
 
 /* more useful */
-.art-style-standard-height{
+.art-style-120-height{
     height: 120vh;
 }
 
@@ -133,8 +146,16 @@ body {
     border: 2px solid #7E8089;
 }
 
+.art-style-grey-3-border{
+    border: 3px solid #7E8089;
+}
+
 .art-style-grey-5-bborder{
     border-bottom: 5px solid #7E8089;
+}
+
+.art-style-grey-3-bborder{
+    border-bottom: 3px solid #7E8089;
 }
 
 /* center */
