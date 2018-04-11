@@ -163,6 +163,3 @@ def update_all(search_queries):
 
 
 
-
-
-

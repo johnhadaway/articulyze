@@ -64,7 +64,7 @@ def generate_processed_df(dataset, winning_articles = True):
         })
 
     new_data_frame["bin"] = [bin_] * len(article_flesch)
-    new_data_frame = new_data_frame[new_data_frame['Word_Count'] >= 200]
+    new_data_frame = new_data_frame[new_data_frame['Word_Count'] >= 400]
 
     return new_data_frame
 
@@ -89,17 +89,16 @@ def process_articles_for_neural_net(paths_to_datasets,
         data_frame = processed_data_frames[0]
 
     if winning_articles:
-        file_name = "data_for_neural_net/pulitzer_winning.csv"
+        file_name = "data_for_neural_net/pulitzer_winning_update.csv"
     else:
-        file_name = "data_for_neural_net/non_pulitzer_winning3.csv"
+        file_name = "data_for_neural_net/non_pulitzer_winning_j.csv"
 
     with open(file_name, 'a'):
         data_frame.to_csv(file_name, header = True)
 
     return None
 
-process_articles_for_neural_net(read_files_into_list("data\countries"), winning_articles = False)
-#process_articles_for_neural_net(["data\pul_dset.csv"], winning_articles = True)
+process_articles_for_neural_net(["data\pul_dset_update.csv"], winning_articles = True)
 
 
 
