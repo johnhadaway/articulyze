@@ -77,10 +77,10 @@ body {
  
 /* about page elements */
 .art-back-img-back1 {
-    background-image: url(../img/back2.png);
+    background-image: url(../img/back1.png);
     background-size:cover;
     background-repeat: no-repeat;
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 /* more useful */
@@ -171,6 +171,7 @@ body {
 
 .art-style-margins-abt{
     padding: 5px;
+    padding-top: 0px;
 }
 
 .art-style-margins-abt-top{
