@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="215ed122-0d94-40f8-8295-7f25128560be" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/website/other-pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/other-pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/afghanistan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/afghanistan.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/burundi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/burundi.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/cameroon.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/central+african+republic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/chad.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/democratic+republic+of+the+congo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/ethiopia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/haiti.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/iraq.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/libya.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/mali.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/myanmar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/niger.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/nigeria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/palestine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/somalia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/south+sudan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/sudan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/syria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/ukraine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/yemen.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_script.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +59,8 @@
       <file leaf-file-name="main_script.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-              <folding>
-                <element signature="e#315#341#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="155">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -68,10 +87,10 @@
         <option value="$PROJECT_DIR$/data_for_neural_net/model3-j.py" />
         <option value="$PROJECT_DIR$/data_for_neural_net/model2.py" />
         <option value="$PROJECT_DIR$/data_for_neural_net/model.py" />
-        <option value="$PROJECT_DIR$/main_script.py" />
         <option value="$PROJECT_DIR$/data_for_neural_net/model_j.py" />
         <option value="$PROJECT_DIR$/news_scraping.py" />
         <option value="$PROJECT_DIR$/processing_for_neural_net.py" />
+        <option value="$PROJECT_DIR$/main_script.py" />
       </list>
     </option>
   </component>
@@ -376,13 +395,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.509758" side_tool="true" visible="true" weight="0.44673538" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51053864" side_tool="true" visible="true" weight="0.44673538" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.490242" weight="0.44673538" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48946136" weight="0.44673538" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.15066354" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -446,9 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-          <folding>
-            <element signature="e#315#341#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -486,9 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-          <folding>
-            <element signature="e#315#341#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,9 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-          <folding>
-            <element signature="e#315#341#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#315#341#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,11 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding>
-            <element signature="e#315#341#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="155">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
