@@ -9,6 +9,8 @@ textarea,
   font-family: "PT Serif", sans-serif;
 }
 
+
+
 /* useful */
 .col-centered{
     float: none;
@@ -26,6 +28,10 @@ textarea,
 
 .art-text-center{
     text-align: center;
+}
+
+.art-text-justify{
+    text-align: left;
 }
 
 /* coloring */
@@ -81,7 +87,7 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     opacity: 1.0;
-}
+} 
 
 /* more useful */
 .art-style-120-height{
@@ -171,7 +177,7 @@ body {
 
 .art-style-margins-abt{
     padding: 5px;
-    padding-top: 0px;
+    padding-top: 8px;
 }
 
 .art-style-margins-abt-top{

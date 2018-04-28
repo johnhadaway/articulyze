@@ -205,7 +205,7 @@ def dale_chall(article):
 ### RANKING ALGORITHIM ### 
 ##########################
 
-def similarity(new_article, pul_averages):
+def similarity(new_article, pul_averages): #NOT USED NOT USED NOT USED
     """
     - FUNCTION: returns the similairty of a single article to the pulitzer articles
     - INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
@@ -269,6 +269,9 @@ def similarity_ml(new_article):
     predictions = loaded_model.predict(new_article_values)
     return predictions.item(0)
 
+def remove_char(char, text):
+    return text.replace(char, "")
+
 def ranking(path, num_to_return = None, threshold = None):
     """
     - FUNCTION: takes a dataset of non-Pulitzer-winning articles and ranks them acc. to
@@ -284,7 +287,7 @@ def ranking(path, num_to_return = None, threshold = None):
     article_score_list = []
 
     for index, row in article_ds.iterrows():
-        article_score_list.append([row['Concerning'], row['URL'], row['Title'],
+        article_score_list.append([row['Concerning'], row['URL'], remove_char("â",row['Title']),
                                    similarity_ml(str(row['Text']))])
 
     if (num_to_return != None) & (threshold == None):

@@ -1,9 +1,3 @@
-# psuedo code
-# use scraper to scrape today's relevant news into data/countries 
-# call ranking.py on them => save dic as pandas.df for each country
-# use sqllite to store pandas.dfs into sql database
-# remove items from more than 7 days ago from sql databases, into archive, re-sort sql databases based on scores
-
 import ranking_a as ranker
 import news_scraping as scraper
 import pandas as pd
@@ -48,11 +42,28 @@ def daily_script():
     conn_current = sqlite.connect("website\current_unohca.db")
     cursor_current = conn_current.cursor()
 
-    # update / create tables for each country in the database (NOT DONE)
+    # update / create tables for each country in the database
+    for country in country_to_articles_dic:
+        country_name = str(country)
+        cursor_current.execute('create table if not exists ' + country_name + ' (url text, title text, score real, days_in_db integer)')
+        conn_current.commit()
 
-    # remove articles that have been there for more than 7 days and store them in an archive.db / delete duplicates in archive.db 
+    # add one to all current rows in db's days_in_db
+    for country in country_to_articles_dic:
+        country_name = str(country)
+        cursor_current.execute('update ' + country_name + ' set days_in_db = days_in_db + 1')
+        conn_current.commit()
 
-    # delete duplicates in current tables and re-sort all tables by score 
+    # add new rows for every country
+    for country in country_to_articles_dic:
+        country_name = str(country)
+        article_info_lists = country_to_articles_dic[country]
+        for article_info in article_info_lists:
+            insert_sql = (article_info[1], article_info[2], article_info[3], 1)
+            cursor_current.execute('insert into ' + country_name + ' values (?, ?, ?, ?)', insert_sql)
+            conn_current.commit()
+
+    conn_current.close()
 
     return None
 
