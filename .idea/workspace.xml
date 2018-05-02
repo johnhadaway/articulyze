@@ -3,17 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="215ed122-0d94-40f8-8295-7f25128560be" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Pulitzer Dataset.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Pulitzer Dataset.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/afghanistan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/afghanistan.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/burundi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/burundi.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ranking_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/ranking_a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/country-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/country-template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/css/art-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/css/art-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/css/color-scheme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/website/css/color-scheme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/current_unohca.db" beforeDir="false" afterPath="$PROJECT_DIR$/website/current_unohca.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/img/temp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/other-pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/other-pages/about.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +41,11 @@
       <file leaf-file-name="main_script.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="199">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,6 +58,7 @@
       <find>headline</find>
       <find>head</find>
       <find>title</find>
+      <find>test_countr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,8 +78,8 @@
         <option value="$PROJECT_DIR$/data_for_neural_net/model_j.py" />
         <option value="$PROJECT_DIR$/news_scraping.py" />
         <option value="$PROJECT_DIR$/processing_for_neural_net.py" />
-        <option value="$PROJECT_DIR$/main_script.py" />
         <option value="$PROJECT_DIR$/ranking_a.py" />
+        <option value="$PROJECT_DIR$/main_script.py" />
       </list>
     </option>
   </component>
@@ -390,11 +387,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5136612" side_tool="true" visible="true" weight="0.44673538" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51444185" side_tool="true" visible="true" weight="0.44673538" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4863388" weight="0.44673538" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48555815" weight="0.44673538" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.15066354" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -828,8 +825,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="199">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

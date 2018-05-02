@@ -3,6 +3,10 @@ import news_scraping as scraper
 import pandas as pd
 import sqlite3 as sqlite
 import os
+import datetime
+from datetime import date
+
+first_date = date(2018, 5, 1)
 
 search_countries = ["afghanistan", "burundi", "cameroon", "central+african+republic", "chad", "democratic+republic+of+the+congo", "ethiopia", "haiti", "iraq", "libya", "mali",
     "myanmar", "niger", "nigeria", "palestine", "somalia", "south+sudan", "sudan", "syria", "ukraine", "yemen"]
@@ -17,7 +21,7 @@ def extract_country_from_file_name(file_name):
     end = file_name.find('.csv', start)
     return file_name[start:end]
 
-def daily_script(): 
+def daily_script(day_par):
 
     # delete all files in data\countries directory 
     fileList = os.listdir("data/countries")
@@ -49,17 +53,19 @@ def daily_script():
         conn_current.commit()
 
     # add one to all current rows in db's days_in_db
+    """
     for country in country_to_articles_dic:
         country_name = str(country)
         cursor_current.execute('update ' + country_name + ' set days_in_db = days_in_db + 1')
         conn_current.commit()
+    """
 
     # add new rows for every country
     for country in country_to_articles_dic:
         country_name = str(country)
         article_info_lists = country_to_articles_dic[country]
         for article_info in article_info_lists:
-            insert_sql = (article_info[1], article_info[2], article_info[3], 1)
+            insert_sql = (article_info[1], article_info[2], article_info[3], day_par)
             cursor_current.execute('insert into ' + country_name + ' values (?, ?, ?, ?)', insert_sql)
             conn_current.commit()
 
@@ -67,4 +73,15 @@ def daily_script():
 
     return None
 
-daily_script()
+def __main__():
+
+    current_date = datetime.date.today()
+    delta = current_date - first_date
+    day_par = delta.days + 1
+    daily_script(day_par)
+
+    print(str(day_par) + ": days in db")
+
+    return None
+
+__main__()
