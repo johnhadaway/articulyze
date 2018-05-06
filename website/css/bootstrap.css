@@ -171,7 +171,7 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
+  color: #FE3211;
   text-decoration: underline;
 }
 
@@ -4481,7 +4481,7 @@ tbody.collapse.show {
 }
 
 .card-link:hover {
-  text-decoration: none;
+  color: #FE3211;
 }
 
 .card-link + .card-link {
@@ -4885,7 +4885,7 @@ tbody.collapse.show {
 .badge-info[href]:hover, .badge-info[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #117a8b;
+  background-color: #FE3211;
 }
 
 .badge-warning {

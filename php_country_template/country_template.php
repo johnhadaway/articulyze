@@ -46,7 +46,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-5 art-style-back-red">
                 <div class="row">
-                    Article Title
+                    Summary
                 </div>
                 <div>
                     Text

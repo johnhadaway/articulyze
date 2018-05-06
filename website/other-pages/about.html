@@ -9,17 +9,21 @@
     <!-- js -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/art-jscript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 </head> 
 <body>
-    <nav class="navbar navbar-expand navbar-dark fixed-top art-style-back-grey">
-      <a class="navbar-brand" href="#">LOGO</a>
+    <nav class="navbar navbar-expand navbar-dark fixed-top art-style-back-black">
+      <a href="../index.html" class="pull-left"><img src="../img/vertical/navbar.png" width="35px" height="30px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#art-navbarCollapse" aria-controls="art-navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="art-navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="countries.html">Countries</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
@@ -27,32 +31,19 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid art-back-img-back1">
-        <div class="row art-style-5-height"></div>
+    <div class="container-fluid art-style-back-grey">
+        <div class="row art-style-15-height"></div>
         <div class="row">
-            <div class="col-md-2 col-3"></div>
-            <div class="col-md-5 col-7 art-style-grey-5-border">
-                <div class="row art-style-margins-abt-top art-style-back-white art-style-grey-5-bborder">
-                    <div class="col-12"><p class="h1 art-text-center text-uppercase art-style-text-red">Mission:</p></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 art-style-margins-abt art-style-back-white">
-                        <p class="art-text-justify art-style-text-black">Our mission is to connect people to powerful stories. We believe in journalism’s capacity to layer narratives. To call to action. To tell untold stories. To break barriers. </p>
+            <div class="col-md-5 col-2"></div>
+            <div class="col-md-5 col-7 art-style-white-3-border">
+                <div class="row art-style-margins-abt-top art-style-back-red">
+                    <div class="col-12 art-style-white-3-bborder">
+                        <p class="h1 art-text-center text-uppercase art-style-text-white">Why?</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5 col-2"></div>
-        </div>
-        <div class="row art-style-5-height"></div>
-        <div class="row">
-            <div class="col-md-5 col-2"></div>
-            <div class="col-md-5 col-7 art-style-grey-5-border">
-                <div class="row art-style-margins-abt-top art-style-back-white art-style-grey-5-bborder">
-                    <div class="col-12"><p class="h1 art-text-center text-uppercase art-style-text-red">Why?</p></div>
-                </div>
                 <div class="row">
-                    <div class="col-12 art-style-margins-abt art-style-back-white">
-                        <p class="art-text-justify art-style-text-black">Annually, the United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA) releases the Global Humanitarian Overview. We saw it. We wanted to learn more. So we built a tool. Now we want to share that tool with you.</p>
+                    <div class="col-12 art-style-margins-abt art-style-back-red">
+                        <p class="art-text-justify art-style-text-white sec-font">Annually, the United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA) releases the Global Humanitarian Overview. We saw it. We wanted to learn more. So, we built a tool. And now we want to share that tool with you.</p>
                     </div>
                 </div>
             </div>
@@ -61,30 +52,73 @@
         <div class="row art-style-5-height"></div>
         <div class="row">
             <div class="col-md-2 col-3"></div>
-            <div class="col-md-5 col-7 art-style-grey-5-border">
-                <div class="row art-style-margins-abt-top art-style-back-white art-style-grey-5-bborder">
-                    <div class="col-12"><p class="h1 art-text-center text-uppercase art-style-text-red">What?</p></div>
+            <div class="col-md-5 col-7 art-style-white-3-border">
+                <div class="row art-style-margins-abt-top art-style-back-red">
+                    <div class="col-12 art-style-white-3-bborder">
+                        <p class="h1 art-text-center text-uppercase art-style-text-white">What?</p>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 art-style-margins-abt art-style-back-white">
-                        <p class="art-text-justify art-style-text-black"> Our algorithm analyzes winners of the Pulitzer Prize for International Reporting and captures a similarity score for any article that we feed it. We use it to suggest powerful articles about pressing humanitarian crises: to unearth journalism about problems that matter. Our database is updated daily.</p>
+                    <div class="col-12 art-style-margins-abt art-style-back-red">
+                        <p class="art-text-justify art-style-text-white sec-font"> Our algorithm analyzes winners of the Pulitzer Prize for International Reporting and captures a similarity score for any article that we feed it. Curently, we use it to suggest powerful articles about pressing humanitarian crises.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-5 col-2"></div>
         </div>
-        <div class="row art-style-5-height"></div>
+        <div class="row art-style-15-height"></div>
     </div>
-    <div class="container-fluid">
-        <div class="row art-style-20-height"></div>
+    <div class="container-fluid art-style-back-white">
+        <div class="row art-style-10-height"></div>
         <div class="row">
-            <div class="col-md-2 col-3"></div>
-            <div class="col-md-8 col-6">
-                Accordion
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="art-faq-text-center art-style-back-red">
+                    <p class="art-style-text-white">
+                    Frequently Asked Questions
+                    </p>
+                </div>
+                <div id="art-accordion">
+                    <div class="card">
+                        <div class="card-header art-style-back-grey">
+                            <a class="collapsed card-link art-faq-text" data-toggle="collapse" href="#collapseOne">
+                            What next?
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#art-accordion">
+                            <div class="card-body">
+                            Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header art-style-back-grey">
+                            <a class="collapsed card-link art-faq-text" data-toggle="collapse" href="#collapseTwo">
+                            How does the algorithim work? What metrics do you use?
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#art-accordion">
+                            <div class="card-body">
+                            Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header art-style-back-grey">
+                            <a class="collapsed card-link art-faq-text" data-toggle="collapse" href="#collapseThree">
+                            How do I contact you guys?
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#art-accordion">
+                            <div class="card-body">
+                            Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2 col-3"></div>
         </div>
-        <div class="row art-style-20-height"></div>
+        <div class="row art-style-10-height"></div>
     </div>
 </body>
 </html>

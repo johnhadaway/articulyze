@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Gudea');
 
 body,
 input,
@@ -6,10 +8,12 @@ button,
 select,
 textarea,
 .navbar-search .search-query {
-  font-family: "PT Serif", sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
-
+.sec-font {
+    font-family: 'Gudea', sans-serif;
+}
 
 /* useful */
 .col-centered{
@@ -34,22 +38,29 @@ textarea,
     text-align: left;
 }
 
+/* panel */ 
+
+art-style-pattern4{
+    background: url(../img/patterns/pattern4.png);
+    background-repeat:repeat; 
+}
+
 /* coloring */
 
 .art-style-back-black{
-    background-color: #191919;
+    background-color: #000000;
 }
 
 .art-style-back-grey{
-    background-color: #7E8089;
+    background-color: #282828;
 }
 
-.art-style-back-green{
-    background-color: #C4F1BE;
+.art-style-back-blue{
+    background-color: #BAD3E6;
 }
 
 .art-style-back-red{
-    background-color: #AA272B;
+    background-color: #FE3211;
 }
 
 .art-style-back-white{
@@ -57,7 +68,7 @@ textarea,
 }
 
 .art-style-text-red{
-    color: #AA272B;
+    color: #FE3211;
 }
 
 .art-style-text-white{
@@ -65,11 +76,15 @@ textarea,
 }
 
 .art-style-text-grey{
-    color: #7E8089;
+    color: #282828;
 }
 
 .art-style-text-black{
-    color: #191919;
+    color: #000000;
+}
+
+.art-style-text-blue{
+    color: #BAD3E6;
 }
 
 /* body */
@@ -143,30 +158,110 @@ body {
     height: 2vh;
 }
 
+.art-style-8-height{
+    height: 8vh;
+}
+
 .art-style-10-height{
     height: 10vh;
+}
+
+.art-style-15-height{
+    height: 15vh;
 }
 
 /* borders */
 
 .art-style-grey-5-border{
-    border: 5px solid #7E8089;
+    border: 5px solid #282828;
 }
 
 .art-style-grey-2-border{
-    border: 2px solid #7E8089;
+    border: 2px solid #282828;
 }
 
 .art-style-grey-3-border{
-    border: 3px solid #7E8089;
+    border: 3px solid #282828;
 }
 
 .art-style-grey-5-bborder{
-    border-bottom: 5px solid #7E8089;
+    border-bottom: 5px solid #282828;
 }
 
 .art-style-grey-3-bborder{
-    border-bottom: 3px solid #7E8089;
+    border-bottom: 3px solid #282828;
+}
+
+.art-style-black-5-border{
+    border: 5px solid #000000;
+}
+
+.art-style-black-2-border{
+    border: 2px solid #000000;
+}
+
+.art-style-black-3-border{
+    border: 3px solid #000000;
+}
+
+.art-style-black-5-bborder{
+    border-bottom: 5px solid #000000;
+}
+
+.art-style-black-3-bborder{
+    border-bottom: 3px solid #000000;
+}
+
+.art-style-black-5-tborder{
+    border-top: 5px solid #000000;
+}
+
+.art-style-black-3-tborder{
+    border-top: 3px solid #000000;
+}
+
+.art-style-black-15-tborder{
+    border-top: 15px solid #000000;
+}
+
+.art-style-red-5-border{
+    border: 5px solid #FE3211;
+}
+
+.art-style-red-2-border{
+    border: 2px solid #FE3211;
+}
+
+.art-style-red-3-border{
+    border: 3px solid #FE3211;
+}
+
+.art-style-red-5-bborder{
+    border-bottom: 5px solid #FE3211;
+}
+
+.art-style-red-3-bborder{
+    border-bottom: 3px solid #FE3211;
+}
+
+.art-style-white-5-border{
+    border: 5px solid #FFFFFF;
+}
+
+.art-style-white-2-border{
+    border: 2px solid #FFFFFF;
+}
+
+.art-style-white-3-border{
+    border: 3px solid #FFFFFF;
+}
+
+.art-style-white-5-bborder{
+    border-bottom: 5px solid #FFFFFF;
+}
+
+.art-style-white-3-bborder{
+    border-bottom: 3px solid #FFFFFF;
 }
 
 /* center */
@@ -183,3 +278,208 @@ body {
 .art-style-margins-abt-top{
     padding: 2px;
 }
+
+/* country backgrounds */ 
+
+.afghanistan-div{
+    background-image: url(../img/MAP1/MAPDESIGN1_Afghanistan.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.burundi-div{
+    background-image: url(../img/MAP1/MAPDESIGN1_Burundi.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.cameroon-div{
+    background-image: url(../img/MAP1/MAPDESIGN1_Cameroon.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.car-div{
+    background-image: url(../img/MAP1/MAPDESIGN1_Central%20African%20Republic.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.chad-div{
+    background-image: url(../img/MAP1/MAPDESIGN1_Chad.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.drc-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Democratic%20Republic%20of%20the%20congo.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.ethiopia-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Ethiopia.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.haiti-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Haiti.jpg");
+    background-size:cover;
+    height: 50vh;
+}
+
+.iraq-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Iraq.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.libya-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Libya.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.mali-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Mali.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.myanmar-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Myanmar.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.niger-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Niger.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.nigeria-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Nigeria.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.opt-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Occupied%20Palestinian%20Territory.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.somalia-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Somalia.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.ssudan-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_South%20Sudan.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.sudan-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Sudan.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.syria-div{
+    background-image: url("../img/MAP1/MAPDESIGN1_Syria.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.ukraine-div{
+    background-image:url("../img/MAP1/MAPDESIGN1_Ukraine.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+.yemen-div{
+    background-image:url("../img/MAP1/MAPDESIGN1_Yemen.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+
+/* country button style */ 
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #FE3211;
+    border-color: #FE3211;
+    font-size: 30px;
+}
+
+.btn-primary:hover{
+    background-color: #000000;
+    border-color: #000000;
+    font-size: 40px;
+}
+
+.art-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;  
+}
+
+/* FAQ stuff */ 
+
+.art-faq-text-center {
+    text-align: center;
+    font-size: 40px;
+    color: #FE3211;
+}
+
+.art-faq-text {
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.card-link:hover {
+  color: #FE3211;
+}
+
+/* home */
+
+.art-home-img{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.art-container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+    background-color: #FE3211;
+    border-color: #FE3211;
+    font-size: 30px;
+}
+
+.btn-secondary:hover{
+    background-color: #FE3211;
+    border-color: #FE3211;
+    font-size: 45px;
+}
+
+
+
+
