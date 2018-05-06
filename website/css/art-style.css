@@ -74,6 +74,7 @@ art-style-pattern4{
 
 .art-style-back-red{
     background-color: #FE3211;
+    opacity: 0.91;
 }
 
 .art-style-back-white{
@@ -429,6 +430,7 @@ body {
     background-color: #FE3211;
     border-color: #FE3211;
     font-size: 30px;
+    opacity: 0.9;
 }
 
 .btn-primary:hover{
@@ -490,7 +492,7 @@ body {
 .btn-secondary:hover{
     background-color: #FE3211;
     border-color: #FE3211;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 /* country style */
@@ -518,6 +520,72 @@ body {
     margin-bottom: 0px;
 }
 
+.art-style-margins-country{
+    padding: 5px;
+    padding-top: 8px;
+}
+
+.art-number-style{
+    color: #FFFFFF;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-right: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+    padding-bottom:10px;
+}
+
+.art-article-title-style{
+    color: #FFFFFF;
+    font-size: 17px;
+    border-right: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+
+.art-hover-effect:hover{
+    background-color:#000000;
+}
+
+.art-unselectable{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.art-link-block {
+    display:inline-grid;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    padding-top: -12px;
+}
+
+a.art-div-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
 
 
 /* country backgrounds 2 */
@@ -528,9 +596,8 @@ body {
 }
 
 .burundi-div-page{
-    background-image: url(../img/MAP2/MAPDESIGN2_Burundi.jpg);
+    background-image: url(../img/MAP2/MAPDESIGN1_Burundi.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
 .cameroon-div{
