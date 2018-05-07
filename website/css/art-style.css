@@ -596,122 +596,104 @@ a.art-div-link {
 }
 
 .burundi-div-page{
-    background-image: url(../img/MAP2/MAPDESIGN1_Burundi.jpg);
+    background-image: url(../img/MAP1/MAPDESIGN1_Burundi.jpg);
     background-size: cover;
 }
 
-.cameroon-div{
+.cameroon-div-page{
     background-image: url(../img/MAP1/MAPDESIGN1_Cameroon.jpg);
     background-size: cover;
-    height: 50vh;
 }
 
-.car-div{
+.car-div-page{
     background-image: url(../img/MAP1/MAPDESIGN1_Central%20African%20Republic.jpg);
     background-size: cover;
-    height: 50vh;
 }
 
-.chad-div{
+.chad-div-page{
     background-image: url(../img/MAP1/MAPDESIGN1_Chad.jpg);
     background-size: cover;
-    height: 50vh;
 }
 
-.drc-div{
+.drc-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Democratic%20Republic%20of%20the%20congo.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.ethiopia-div{
+.ethiopia-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Ethiopia.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.haiti-div{
+.haiti-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Haiti.jpg");
     background-size:cover;
     height: 50vh;
 }
 
-.iraq-div{
+.iraq-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Iraq.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.libya-div{
+.libya-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Libya.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.mali-div{
+.mali-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Mali.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.myanmar-div{
+.myanmar-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Myanmar.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.niger-div{
+.niger-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Niger.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.nigeria-div{
+.nigeria-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Nigeria.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.opt-div{
+.opt-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Occupied%20Palestinian%20Territory.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.somalia-div{
+.somalia-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Somalia.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.ssudan-div{
+.ssudan-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_South%20Sudan.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.sudan-div{
+.sudan-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Sudan.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.syria-div{
+.syria-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Syria.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.ukraine-div{
+.ukraine-div-page{
     background-image:url("../img/MAP1/MAPDESIGN1_Ukraine.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
-.yemen-div{
+.yemen-div-page{
     background-image:url("../img/MAP1/MAPDESIGN1_Yemen.jpg");
     background-size: cover;
-    height: 50vh;
 }
 
 

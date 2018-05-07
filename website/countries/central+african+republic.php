@@ -8,7 +8,7 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <?php
     $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM burundi WHERE days_in_db > (SELECT MAX(days_in_db) FROM burundi) - 7 ORDER BY score DESC';
+    $sql = 'SELECT DISTINCT * FROM central+african+republic WHERE days_in_db > (SELECT MAX(days_in_db) FROM central+african+republic) - 7 ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;
@@ -22,7 +22,7 @@
     function show2($rowarray){
         global $x;
         $url = $rowarray[$x]['url'];
-        echo "<a class='art-div-link' href='$url'></a>"       
+        echo "<a class='art-div-link' href='$url'></a>";       
         $x++;
     }
     ?>
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="art-navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../other-pages/countries.html">Countries2</a>
+            <a class="nav-link" href="../other-pages/countries.html">Countries</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../other-pages/about.html">About</a>
@@ -44,12 +44,12 @@
         </ul>
       </div>
     </nav>
-    <div class="container-fluid afghanistan-div-page">
+    <div class="container-fluid car-div-page">
         <div class="row art-style-10-height"></div>
         <div class="row">
             <div class="col-md-3 col-1"></div>
             <div class="col-md-6 col-10 art-style-back-red art-container-country">
-                <p class="text-uppercase country-name-text art-unselectable">Afghanistan</p>
+                <p class="text-uppercase country-name-text art-unselectable">Central African Republic</p>
             </div>
             <div class="col-md-3 col-1"></div>
         </div>
@@ -62,7 +62,7 @@
                         <p class="text-uppercase art-country-title-style art-unselectable">Summary:</p>
                     </div>
                     <div class="col-12">
-                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">Afghanistan has been involved in prolonged conflict for nearly 35 years. This conflict has hampered development and poverty reduction efforts. The situation remains grave: by the end of 2017, roughly 500,000 Afghans had been internally displaced – forced to flee. This is, in larger part, a direct result of conflict between the Afghan National Defense Security Forces (ANDSF) and non-state armed groups in Afghanistan’s eastern region.  Afghanistan is ranked 169th in the Human Development Index (2015).</p>
+                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">Socio-political instability over the last 30 years has hampered the Central Africa Republic’s development. Currently, the country suffers from a deteriorating security situation: conflicts resurfaced towards the end of 2016 and intensified during 2017. Armed violence in the country has resulted in internally displaced populations and mounting humanitarian needs. This is manifest in the roughly 1 million people that fled their homes in 2017 and the 2.5 million people that require emergency humanitarian assistance. The Central African Republic is ranked 188th in the Human Development Index (2015).</p>
                     </div>
                 </div>
             </div>
