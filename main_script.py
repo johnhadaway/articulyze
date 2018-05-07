@@ -29,7 +29,7 @@ def daily_script(day_par):
         os.remove("data/countries/"+fileName)
 
     # generate search queries
-    search_queries = scraper.generate_search_queries(test_countries, additional_queries)
+    search_queries = scraper.generate_search_queries(search_countries, additional_queries)
 
     # update all / return file names
     file_names = scraper.update_all(search_queries)

@@ -6,6 +6,26 @@
     <link rel="stylesheet" href = "../css/bootstrap-grid.css">
     <link rel="stylesheet" href = "../css/art-style.css">
     <link rel="stylesheet" href = "../css/art-country-style.css">
+    <?php
+    $db = new PDO("sqlite:current_unohca.db");
+    $sql = 'SELECT DISTINCT * FROM burundi WHERE days_in_db > (SELECT MAX(days_in_db) FROM burundi) - 7 ORDER BY score DESC';
+    $result = $db->query($sql);
+    $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
+    $x = 0;
+
+    function show($rowarray){
+        global $x;
+        $title = $rowarray[$x]['title'];
+        echo "$title";
+    };
+    
+    function show2($rowarray){
+        global $x;
+        $url = $rowarray[$x]['url'];
+        echo "<a class='art-div-link' href='$url'></a>"       
+        $x++;
+    }
+    ?>
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-dark fixed-top art-style-back-black">
@@ -58,28 +78,48 @@
                 <div class="row">
                     <div class="col-2 art-number-style art-unselectable">1.</div>
                     <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
-                        Article 1 Title
-                        <a class="art-div-link" href="http://www.my_link.com"></a>
+                        <?php
+                            show($rowarray);
+                        ?>
+                        <?php
+                            show2($rowarray);
+                        ?>
                     </div>
                     <div class="col-2 art-number-style art-unselectable">2.</div>
                     <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
-                        Article 2 Title
-                        <a class="art-div-link" href="http://www.my_link.com"></a>
+                        <?php
+                            show($rowarray);
+                        ?>
+                        <?php
+                            show2($rowarray);
+                        ?>
                     </div>
                     <div class="col-2 art-number-style art-unselectable">3.</div>
                     <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
-                        Article 3 Title
-                        <a class="art-div-link" href="http://www.my_link.com"></a>
+                        <?php
+                            show($rowarray);
+                        ?>
+                        <?php
+                            show2($rowarray);
+                        ?>
                     </div>
                     <div class="col-2 art-number-style art-unselectable">4.</div>
                     <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
-                        Article 4 Title
-                        <a class="art-div-link" href="http://www.my_link.com"></a>
+                        <?php
+                            show($rowarray);
+                        ?>
+                        <?php
+                            show2($rowarray);
+                        ?>
                     </div>
                     <div class="col-2 art-number-style art-unselectable">5.</div>
                     <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
-                        Article 5 Text
-                        <a class="art-div-link" href="http://www.my_link.com"></a>
+                        <?php
+                            show($rowarray);
+                        ?>
+                        <?php
+                            show2($rowarray);
+                        ?>
                     </div>
                 </div>
             </div>
