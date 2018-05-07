@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="215ed122-0d94-40f8-8295-7f25128560be" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/countries/afghanistan.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/afghanistan.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/countries/burundi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/burundi.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ranking_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/ranking_a.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main_script.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_script.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_script.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
@@ -50,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ranking_a.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ranking_a.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ranking_a.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="296" column="20" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="20" />
+            <state relative-caret-position="172">
+              <caret line="322" column="3" selection-start-line="322" selection-start-column="3" selection-end-line="322" selection-end-column="3" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -97,8 +93,8 @@
         <option value="$PROJECT_DIR$/data_for_neural_net/model_j.py" />
         <option value="$PROJECT_DIR$/news_scraping.py" />
         <option value="$PROJECT_DIR$/processing_for_neural_net.py" />
-        <option value="$PROJECT_DIR$/ranking_a.py" />
         <option value="$PROJECT_DIR$/main_script.py" />
+        <option value="$PROJECT_DIR$/ranking_a.py" />
       </list>
     </option>
   </component>
@@ -142,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_script">
+  <component name="RunManager" selected="Python.ranking_a">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="fairdink_yee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,25 +196,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="model_j" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="fairdink_yee" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_for_neural_net" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_for_neural_net/model_j.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="news_scraping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fairdink_yee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,6 +229,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/processing_for_neural_net.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ranking_a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fairdink_yee" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ranking_a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -366,16 +362,16 @@
       <item itemvalue="Python.processing_for_neural_net" />
       <item itemvalue="Python.model" />
       <item itemvalue="Python.main_script" />
-      <item itemvalue="Python.model_j" />
       <item itemvalue="Python.news_scraping" />
+      <item itemvalue="Python.ranking_a" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ranking_a" />
         <item itemvalue="Python.main_script" />
         <item itemvalue="Python.processing_for_neural_net" />
         <item itemvalue="Python.model" />
         <item itemvalue="Python.news_scraping" />
-        <item itemvalue="Python.model_j" />
       </list>
     </recent_temporary>
   </component>
@@ -406,11 +402,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5152225" side_tool="true" visible="true" weight="0.44673538" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51600313" side_tool="true" visible="true" weight="0.44673538" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4847775" weight="0.44673538" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48399687" weight="0.44673538" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.15066354" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -432,25 +428,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15066354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44673538" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.5048701" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.49837664" weight="0.32995737" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.49512988" weight="0.32995737" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,9 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -518,9 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="124" column="10" lean-forward="true" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,19 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-938">
           <caret line="84" column="65" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ranking_a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="296" column="20" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,6 +819,16 @@
           <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ranking_a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="322" column="3" selection-start-line="322" selection-start-column="3" selection-end-line="322" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>

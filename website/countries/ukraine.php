@@ -6,6 +6,7 @@
     <link rel="stylesheet" href = "../css/bootstrap-grid.css">
     <link rel="stylesheet" href = "../css/art-style.css">
     <link rel="stylesheet" href = "../css/art-country-style.css">
+    <link rel="icon" href="../img/ICONS/glass.png">
     <?php
     $db = new PDO("sqlite:current_unohca.db");
     $sql = 'SELECT DISTINCT * FROM ukraine WHERE days_in_db > (SELECT MAX(days_in_db) FROM ukraine) - 7 ORDER BY score DESC';
