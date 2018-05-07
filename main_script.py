@@ -6,7 +6,7 @@ import os
 import datetime
 from datetime import date
 
-first_date = date(2018, 5, 1)
+first_date = date(2018, 5, 7)
 
 search_countries = ["afghanistan", "burundi", "cameroon", "central+african+republic", "chad", "democratic+republic+of+the+congo", "ethiopia", "haiti", "iraq", "libya", "mali",
     "myanmar", "niger", "nigeria", "palestine", "somalia", "south+sudan", "sudan", "syria", "ukraine", "yemen"]
@@ -38,6 +38,7 @@ def daily_script(day_par):
 
     # go through all file names and create dictionary mapping country name to ranked list of lists
     for file_name in file_names:
+        print(file_name)
         ranked_list_of_lists = ranker.ranking(file_name)
         country_name = extract_country_from_file_name(file_name)
         country_to_articles_dic.update({country_name : ranked_list_of_lists})
@@ -48,8 +49,8 @@ def daily_script(day_par):
 
     # update / create tables for each country in the database
     for country in country_to_articles_dic:
-        country_name = str(country)
-        cursor_current.execute('create table if not exists ' + country_name + ' (url text, title text, score real, days_in_db integer)')
+        country_name = str(country).replace("+", "")
+        cursor_current.execute('create table if not exists [' + country_name + '] (url text, title text, score real, days_in_db integer)')
         conn_current.commit()
 
     # add one to all current rows in db's days_in_db
@@ -62,11 +63,11 @@ def daily_script(day_par):
 
     # add new rows for every country
     for country in country_to_articles_dic:
-        country_name = str(country)
+        country_name = str(country).replace("+", "")
         article_info_lists = country_to_articles_dic[country]
         for article_info in article_info_lists:
             insert_sql = (article_info[1], article_info[2], article_info[3], day_par)
-            cursor_current.execute('insert into ' + country_name + ' values (?, ?, ?, ?)', insert_sql)
+            cursor_current.execute('insert into [' + country_name + '] values (?, ?, ?, ?)', insert_sql)
             conn_current.commit()
 
     conn_current.close()

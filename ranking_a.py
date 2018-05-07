@@ -215,7 +215,6 @@ def similarity(new_article, pul_averages): #NOT USED NOT USED NOT USED
     new_sentence_sentiment = tb_sentence_sentiment(new_article)
     new_article_sentiment = tb_article_sentiment(new_article)
 
-
     # dictionary mapping index to tuple containing (article score, weight for metric)
     new_article_values = {'Flesch' : (flesch_index(new_article), 1),
                           'S_Polarity' : (new_sentence_sentiment[0], 1),
@@ -246,6 +245,12 @@ def similarity_ml(new_article):
     - INPUT PARAMETERS: new_article (str: non-pulitzer article text), column_averages (dictionary passed from get_averages)
     - RV: similarity score (absolute value of average deviation from pulitzer averages)
     """
+
+    article = new_article.lower()
+    c = Counter(article)
+    sentence_count = c['.'] + c[':'] + c['!'] + c['?']
+    if sentence_count == 0:
+        return None
 
     new_sentence_sentiment = tb_sentence_sentiment(new_article)
     new_article_sentiment = tb_article_sentiment(new_article)
@@ -287,8 +292,11 @@ def ranking(path, num_to_return = None, threshold = None):
     article_score_list = []
 
     for index, row in article_ds.iterrows():
+        similarity = similarity_ml(str(row['Text']))
+        if similarity == None:
+            continue
         article_score_list.append([row['Concerning'], row['URL'], remove_char("â",row['Title']),
-                                   similarity_ml(str(row['Text']))])
+                                   similarity])
 
     if (num_to_return != None) & (threshold == None):
         return sorted(article_score_list, key = itemgetter(3),

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <?php
     $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM central+african+republic WHERE days_in_db > (SELECT MAX(days_in_db) FROM central+african+republic) - 7 ORDER BY score DESC';
+    $sql = 'SELECT DISTINCT * FROM centralafricanrepublic WHERE days_in_db > (SELECT MAX(days_in_db) FROM centralafricanrepublic) - 7 ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;

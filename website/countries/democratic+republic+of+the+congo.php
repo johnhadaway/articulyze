@@ -8,7 +8,7 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <?php
     $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM democratic+republic+of+the+congo WHERE days_in_db > (SELECT MAX(days_in_db) FROM democratic+republic+of+the+congo) - 7 ORDER BY score DESC';
+    $sql = 'SELECT DISTINCT * FROM democraticrepublicofthecongo WHERE days_in_db > (SELECT MAX(days_in_db) FROM democraticrepublicofthecongo) - 7 ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;
