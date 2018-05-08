@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Burundi</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href = "../css/bootstrap.min.css">
     <link rel="stylesheet" href = "../css/bootstrap-grid.css">
