@@ -103,7 +103,8 @@ def update_json(pul_ds_path):
     - INPUT PARAMETERS: path to pulitzer dataset
     - RV: n/a
     """
-    pul_ds = pd.read_csv(pul_ds_path, encoding = 'latin1').dropna()
+    #replace encoding with latin1 if utf-8 dnw
+    pul_ds = pd.read_csv(pul_ds_path, encoding = 'utf-8').dropna()
     average_dictionary = read_pul_averages(pul_ds)
 
     with open('data\pul_averages.json', 'w') as f:

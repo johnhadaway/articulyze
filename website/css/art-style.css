@@ -497,14 +497,6 @@ body {
 
 /* country style */
 
-.country-name-text{
-    color: #FFFFFF;
-    font-size: 55px;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 .art-container-country {
   display: flex;
   justify-content: center;
@@ -512,9 +504,17 @@ body {
   border: 3px solid #FFFFFF;
 }
 
+.country-name-text {
+    text-align: center;
+    font-size: 10vw;
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-bottom: 4px;  
+}
+
 .art-country-title-style {
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
     color: #FFFFFF;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -536,7 +536,7 @@ body {
     border-right: 3px solid #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
     border-left: 3px solid #FFFFFF;
-    padding-bottom:10px;
+    padding-bottom:16px;
 }
 
 .art-article-title-style{
@@ -546,7 +546,8 @@ body {
     border-bottom: 3px solid #FFFFFF;
     text-align: center;
     vertical-align: middle;
-    padding-top: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .art-hover-effect:hover{

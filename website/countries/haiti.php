@@ -77,8 +77,8 @@
                     <p class="text-uppercase art-country-title-style art-unselectable">Articles:</p>
                 </div>
                 <div class="row">
-                    <div class="col-2 art-number-style art-unselectable">1.</div>
-                    <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
+                    <div class="col-3 art-number-style art-unselectable">1.</div>
+                    <div class="col-9 art-article-title-style sec-font art-hover-effect art-unselectable">
                         <?php
                             show($rowarray);
                         ?>
@@ -86,8 +86,8 @@
                             show2($rowarray);
                         ?>
                     </div>
-                    <div class="col-2 art-number-style art-unselectable">2.</div>
-                    <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
+                    <div class="col-3 art-number-style art-unselectable">2.</div>
+                    <div class="col-9 art-article-title-style sec-font art-hover-effect art-unselectable">
                         <?php
                             show($rowarray);
                         ?>
@@ -95,8 +95,8 @@
                             show2($rowarray);
                         ?>
                     </div>
-                    <div class="col-2 art-number-style art-unselectable">3.</div>
-                    <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
+                    <div class="col-3 art-number-style art-unselectable">3.</div>
+                    <div class="col-9 art-article-title-style sec-font art-hover-effect art-unselectable">
                         <?php
                             show($rowarray);
                         ?>
@@ -104,8 +104,8 @@
                             show2($rowarray);
                         ?>
                     </div>
-                    <div class="col-2 art-number-style art-unselectable">4.</div>
-                    <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
+                    <div class="col-3 art-number-style art-unselectable">4.</div>
+                    <div class="col-9 art-article-title-style sec-font art-hover-effect art-unselectable">
                         <?php
                             show($rowarray);
                         ?>
@@ -113,8 +113,8 @@
                             show2($rowarray);
                         ?>
                     </div>
-                    <div class="col-2 art-number-style art-unselectable">5.</div>
-                    <div class="col-10 art-article-title-style sec-font art-hover-effect art-unselectable">
+                    <div class="col-3 art-number-style art-unselectable">5.</div>
+                    <div class="col-9 art-article-title-style sec-font art-hover-effect art-unselectable">
                         <?php
                             show($rowarray);
                         ?>

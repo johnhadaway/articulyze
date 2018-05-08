@@ -287,8 +287,9 @@ def ranking(path, num_to_return = None, threshold = None):
     """
 
     # pul_averages = json.load(open('data\pul_averages.json')) -- only needed
+    #latin1 if utf-8 dnw
     article_ds = pd.read_csv(path,
-                             encoding = 'latin1').dropna().drop_duplicates(subset = ['URL', 'Text'])
+                             encoding = 'utf-8').dropna().drop_duplicates(subset = ['URL', 'Text'])
     article_score_list = []
 
     for index, row in article_ds.iterrows():

@@ -77,7 +77,8 @@ def process_articles_for_neural_net(paths_to_datasets,
     processed_data_frames = []
 
     for path in paths_to_datasets:
-        df = pd.read_csv(path, encoding="latin1").dropna()
+        #replace utf-8 with latin1 if utf-8 dnw
+        df = pd.read_csv(path, encoding="utf-8").dropna()
         df_processed = generate_processed_df(df, winning_articles)
         print(path)
         processed_data_frames.append(df_processed)

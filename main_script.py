@@ -8,11 +8,11 @@ from datetime import date
 
 first_date = date(2018, 5, 7)
 
-search_countries = ["afghanistan", "burundi", "cameroon", "central+african+republic", "chad", "democratic+republic+of+the+congo", "ethiopia", "haiti", "iraq", "libya", "mali",
+search_countries = ["afghanistan", "burundi", "cameroon", "central+african+republic", "chad+country", "democratic+republic+of+the+congo", "ethiopia", "haiti", "iraq", "libya", "mali",
     "myanmar", "niger", "nigeria", "palestine", "somalia", "south+sudan", "sudan", "syria", "ukraine", "yemen"]
 
 test_countries = ["afghanistan", "burundi"]
-additional_queries = ["", "crisis", "humanitarian"]
+additional_queries = ["crisis", "humanitarian"]
 
 def extract_country_from_file_name(file_name):
     # file structure "data\countries\country_name.csv"
