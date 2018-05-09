@@ -7,7 +7,7 @@
       <change beforePath="$PROJECT_DIR$/data/countries/burundi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/burundi.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/cameroon.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/cameroon.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/central+african+republic.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/central+african+republic.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/countries/chad.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/countries/chad+country.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/chad+country.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/democratic+republic+of+the+congo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/democratic+republic+of+the+congo.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/ethiopia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/ethiopia.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/haiti.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/haiti.csv" afterDir="false" />
@@ -24,32 +24,7 @@
       <change beforePath="$PROJECT_DIR$/data/countries/syria.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/syria.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/ukraine.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/ukraine.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/countries/yemen.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries/yemen.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processing_for_neural_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/processing_for_neural_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pul_avg_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/pul_avg_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ranking_a.py" beforeDir="false" afterPath="$PROJECT_DIR$/ranking_a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/afghanistan.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/afghanistan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/burundi.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/burundi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/cameroon.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/cameroon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/central+african+republic.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/central+african+republic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/chad.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/chad.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/countries/current_unohca.db" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/current_unohca.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/democratic+republic+of+the+congo.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/democratic+republic+of+the+congo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/ethiopia.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/ethiopia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/haiti.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/haiti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/iraq.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/iraq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/libya.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/libya.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/mali.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/mali.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/myanmar.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/myanmar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/niger.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/niger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/nigeria.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/nigeria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/opt.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/opt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/somalia.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/somalia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/south+sudan.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/south+sudan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/sudan.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/sudan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/syria.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/syria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/ukraine.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/ukraine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/countries/yemen.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/countries/yemen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/css/art-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/css/art-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/other-pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/other-pages/about.html" afterDir="false" />
@@ -84,12 +59,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main_script.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="17">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -440,14 +415,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5191257" side_tool="true" visible="true" weight="0.44673538" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51990634" side_tool="true" visible="true" weight="0.44673538" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48087433" weight="0.44673538" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4800937" weight="0.44673538" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.15066354" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -469,25 +443,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15066354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44673538" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" sideWeight="0.5048701" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.49837664" weight="0.32995737" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.49512988" weight="0.32995737" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32897604" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="17">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

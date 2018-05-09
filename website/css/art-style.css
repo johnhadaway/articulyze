@@ -26,6 +26,7 @@ textarea,
 
 .nav-item a{
     color : #FFFFFF !important;
+    font-size: 16px;
 }
 
 /* useful */
@@ -51,12 +52,59 @@ textarea,
     text-align: left;
 }
 
+.art-undraggable {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* social */
+
+.art-follow{
+    background-color: #FE3211;
+    border-right: 3px solid #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
 /* panel */ 
 
-art-style-pattern4{
-    background: url(../img/patterns/pattern4.png);
-    background-repeat:repeat; 
+.art-style-pattern1{
+    background-image: url(../img/patterns/pattern5.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    -webkit-transform: translate3d(0,0,1px);
 }
+
+.art-style-pattern3{
+    background-image: url(../img/patterns/pattern3.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    -webkit-transform: translate3d(0,0,1px);
+    vertical-align: middle;
+}
+
+.art-style-patter4{
+    background: url(../img/patterns/pattern4.png)
+}
+
+
 
 /* coloring */
 
@@ -74,7 +122,7 @@ art-style-pattern4{
 
 .art-style-back-red{
     background-color: #FE3211;
-    opacity: 0.91;
+    opacity: 0.94;
 }
 
 .art-style-back-white{
@@ -102,8 +150,15 @@ art-style-pattern4{
 }
 
 /* body */
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
-    padding-top: 55px;
+    height: 100%;
+    overflow: auto;
+    padding-top: 50px;
 }
 
 ::-webkit-scrollbar { 
@@ -117,6 +172,10 @@ body {
     background-repeat: no-repeat;
     opacity: 1.0;
 } 
+
+.override-opacity {
+    opacity: 1.0;
+}
 
 /* more useful */
 .art-style-120-height{
@@ -145,6 +204,10 @@ body {
 
 .art-style-70-height{
     height: 70vh;
+}
+
+.art-style-90-height{
+    height: 90vh;
 }
 
 .art-style-20-height{
@@ -463,6 +526,24 @@ body {
   color: #FE3211;
 }
 
+/* gif */
+
+.art-gif{
+    width: 90%;
+    height: 90%;
+    vertical-align: middle;
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.gif-cover{
+    background-color: #ec1706;
+}
+
 /* home */
 
 .art-home-img{
@@ -480,19 +561,37 @@ body {
   align-items: center; 
 }
 
+.art-home-desc {
+    font-size: 19px;
+}
+
+.pattern-back {
+    width: 90%;
+    height: 90%;
+    vertical-align: middle;
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:visited,
 .btn-secondary:focus {
     background-color: #FE3211;
     border-color: #FE3211;
-    font-size: 30px;
+    font-size: 45px;
+    opacity: 0.85;
 }
 
 .btn-secondary:hover{
-    background-color: #FE3211;
-    border-color: #FE3211;
-    font-size: 40px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #FE3211;
+    font-size: 45px;
 }
 
 /* country style */
@@ -506,7 +605,7 @@ body {
 
 .country-name-text {
     text-align: center;
-    font-size: 10vw;
+    font-size: 35px;
     color: #FFFFFF;
     margin-top: 4px;
     margin-bottom: 4px;  
@@ -514,10 +613,10 @@ body {
 
 .art-country-title-style {
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     color: #FFFFFF;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;  
 }
 
 .art-style-margins-country{
