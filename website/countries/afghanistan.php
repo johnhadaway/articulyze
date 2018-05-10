@@ -9,8 +9,8 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <link rel="icon" href="../img/ICONS/glass.png">
     <?php
-    $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM afghanistan WHERE days_in_db > (SELECT MAX(days_in_db) FROM afghanistan) - 7 ORDER BY score DESC';
+    $db = new PDO("sqlite:current_unocha.db");
+    $sql = 'SELECT * FROM afghanistan WHERE days_in_db > (SELECT MAX(days_in_db) FROM afghanistan) - 7 GROUP BY title ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;
@@ -64,7 +64,7 @@
                         <p class="text-uppercase art-country-title-style art-unselectable">Summary:</p>
                     </div>
                     <div class="col-12">
-                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">Afghanistan has been involved in prolonged conflict for nearly 35 years. This conflict has hampered development and poverty reduction efforts. The situation remains grave: by the end of 2017, roughly 500,000 Afghans had been internally displaced – forced to flee. This is, in larger part, a direct result of conflict between the Afghan National Defense Security Forces (ANDSF) and non-state armed groups in Afghanistan’s eastern region.  Afghanistan is ranked 169th in the Human Development Index (2015).</p>
+                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">Afghanistan has been involved in prolonged conflict for nearly 35 years. This conflict has hampered development and poverty reduction efforts. And the situation remains grave: by the end of 2017, roughly 500,000 Afghans had been internally displaced – forced to flee. This is, in larger part, a direct result of conflict between the Afghan National Defense Security Forces (ANDSF) and non-state armed groups in Afghanistan’s eastern region.  Afghanistan is ranked 169th in the Human Development Index (2015).</p>
                     </div>
                 </div>
             </div>

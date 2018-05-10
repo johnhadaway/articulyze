@@ -529,7 +529,7 @@ body {
 /* gif */
 
 .art-gif{
-    width: 90%;
+    width: 80%;
     height: 90%;
     vertical-align: middle;
     display: block;
@@ -537,7 +537,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vh;
-    margin-bottom: 2vh;
     opacity: 0.9;
 }
 
@@ -563,7 +562,7 @@ body {
 }
 
 .art-home-desc {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .pattern-back {
@@ -583,14 +582,15 @@ body {
 .btn-secondary:visited,
 .btn-secondary:focus {
     background-color: #FE3211;
-    border: 5px solid #FE3211;
-    font-size: 55px;
+    border-color: #FE3211;
+    font-size: 35px;
 }
 
 .btn-secondary:hover{
-    background-color: #FE3211;
-    border: 5px solid #FFFFFF;
-    font-size: 55px;
+    background-color: #000000;
+    border-color: #000000;
+    font-size: 35px;
+    opacity: 0.7;
 }
 
 /* country style */
@@ -604,7 +604,7 @@ body {
 
 .country-name-text {
     text-align: center;
-    font-size: 35px;
+    font-size: 42px;
     color: #FFFFFF;
     margin-top: 4px;
     margin-bottom: 4px;  
@@ -727,7 +727,6 @@ a.art-div-link {
 .haiti-div-page{
     background-image: url("../img/MAP1/MAPDESIGN1_Haiti.jpg");
     background-size:cover;
-    height: 50vh;
 }
 
 .iraq-div-page{

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <link rel="icon" href="../img/ICONS/glass.png">
     <?php
-    $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM chadcountry WHERE days_in_db > (SELECT MAX(days_in_db) FROM chadcountry) - 7 ORDER BY score DESC';
+    $db = new PDO("sqlite:current_unocha.db");
+    $sql = 'SELECT * FROM chadcountry WHERE days_in_db > (SELECT MAX(days_in_db) FROM chadcountry) - 7 GROUP BY title ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;
@@ -64,7 +64,7 @@
                         <p class="text-uppercase art-country-title-style art-unselectable">Summary:</p>
                     </div>
                     <div class="col-12">
-                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">According to the OCHA, Chad suffers from widespread food insecurity, the proliferation of displaced populations, a public health emergency, and recurring national disasters. With an estimated 350,000 cases of acute malnutrition in children between the ages of 6 and 59 months, more than 700,000 displaced people, a high prevalence of epidemic-prone diseases, and recurrent floods and droughts, development in Chad has been fraught. Chad ranks 186th in the Human Development Index (2015). </p>
+                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">According to the OCHA, Chad suffers from widespread food insecurity, the proliferation of displaced populations, a public health emergency, and recurring natural disasters. With an estimated 350,000 cases of acute malnutrition in children between the ages of 6 and 59 months, more than 700,000 displaced people, a high prevalence of epidemic-prone diseases, and recurrent floods and droughts, development in Chad has been fraught. Chad ranks 186th in the Human Development Index (2015). </p>
                     </div>
                 </div>
             </div>

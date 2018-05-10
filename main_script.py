@@ -10,8 +10,11 @@ first_date = date(2018, 5, 7)
 
 search_countries = ["afghanistan", "burundi", "cameroon", "central+african+republic", "chad+country", "democratic+republic+of+the+congo", "ethiopia", "haiti", "iraq", "libya", "mali",
     "myanmar", "niger", "nigeria", "palestine", "somalia", "south+sudan", "sudan", "syria", "ukraine", "yemen"]
+country_names_for_parse = ["Afghanistan", "Afghan", "Burundi", "Burundian", "Cameroon", "Cameroonian", "African", "Crisis", "Central African", "Central Africa", "CAR",
+                           "Chad", "Chadian", "Congo", "Congolese", "Ethiopia", "Ethiopian", "Haiti", "Haitian",
+                           "Iraq", "Iraqi", "Libya", "Libyan", "Mali", "Malian", "Myanmar", "Burma", "Rohingya", "Niger", "Nigeria", "Nigerian", "Palestine", "Palestinian",
+                           "Somalia", "Somalian", "Sudan", "Sudanese", "Syria", "Syrian", "Ukraine", "Ukrainian" "Yemen", "Yemeni", "Crisis"]
 
-test_countries = ["afghanistan", "burundi"]
 additional_queries = ["crisis", "humanitarian"]
 
 def extract_country_from_file_name(file_name):
@@ -44,7 +47,7 @@ def daily_script(day_par):
         country_to_articles_dic.update({country_name : ranked_list_of_lists})
 
     # connect to current_database (or create on first run), and create cursor object for it 
-    conn_current = sqlite.connect("website\countries\current_unohca.db")
+    conn_current = sqlite.connect("website\countries\current_unocha.db")
     cursor_current = conn_current.cursor()
 
     # update / create tables for each country in the database
@@ -66,6 +69,8 @@ def daily_script(day_par):
         country_name = str(country).replace("+", "")
         article_info_lists = country_to_articles_dic[country]
         for article_info in article_info_lists:
+            if any(substring in article_info[2] for substring in country_names_for_parse) == False:
+                continue
             insert_sql = (article_info[1], article_info[2], article_info[3], day_par)
             cursor_current.execute('insert into [' + country_name + '] values (?, ?, ?, ?)', insert_sql)
             conn_current.commit()

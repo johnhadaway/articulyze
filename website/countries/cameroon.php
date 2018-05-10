@@ -10,7 +10,7 @@
     <link rel="icon" href="../img/ICONS/glass.png">
     <?php
     $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM cameroon WHERE days_in_db > (SELECT MAX(days_in_db) FROM cameroon) - 7 ORDER BY score DESC';
+    $sql = 'SELECT * FROM cameroon WHERE days_in_db > (SELECT MAX(days_in_db) FROM cameroon) - 7 GROUP BY title ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;

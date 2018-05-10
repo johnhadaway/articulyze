@@ -9,8 +9,8 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <link rel="icon" href="../img/ICONS/glass.png">
     <?php
-    $db = new PDO("sqlite:current_unohca.db");
-    $sql = 'SELECT DISTINCT * FROM ukraine WHERE days_in_db > (SELECT MAX(days_in_db) FROM ukraine) - 7 ORDER BY score DESC';
+    $db = new PDO("sqlite:current_unocha.db");
+    $sql = 'SELECT * FROM ukraine WHERE days_in_db > (SELECT MAX(days_in_db) FROM ukraine) - 7 GROUP BY title ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
     $x = 0;
@@ -64,7 +64,7 @@
                         <p class="text-uppercase art-country-title-style art-unselectable">Summary:</p>
                     </div>
                     <div class="col-12">
-                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">The Ukrainian humanitarian crisis is characterized by a tragic human toll. According to its Humanitarian Needs Overview for 2018, 4.4 million Ukrainians have been affected by the crisis, of whom 3.4 million require humanitarian assistance. Almost 40 percent of the population living along the 'contact line' – the point of heightened violence – are affected by shelling daily. 1.2 million people remain food insecure, and the number of cases of TB, HIV and polio have increased. These conditions are worsened by Ukrainian winters and the restrictions on access for humanitarian parties, among other things.</p>
+                        <p class="art-style-text-white sec-font art-style-margins-country art-unselectable">The Ukrainian humanitarian crisis is characterized by a tragic human toll. According to the country's Humanitarian Needs Overview for 2018, 4.4 million Ukrainians have been affected by the crisis, of whom 3.4 million require humanitarian assistance. Almost 40 percent of the population living along the 'contact line' – the point of heightened violence – are affected by shelling daily. 1.2 million people remain food insecure, and the number of cases of TB, HIV and polio have increased. These conditions are worsened by Ukrainian winters and the restrictions on access for humanitarian parties, among other things.</p>
                     </div>
                 </div>
             </div>
