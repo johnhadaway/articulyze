@@ -47,7 +47,7 @@ def daily_script(day_par):
         country_to_articles_dic.update({country_name : ranked_list_of_lists})
 
     # connect to current_database (or create on first run), and create cursor object for it 
-    conn_current = sqlite.connect("website\countries\current_unocha.db")
+    conn_current = sqlite.connect("htdocs\countries\current_unocha.db")
     cursor_current = conn_current.cursor()
 
     # update / create tables for each country in the database
