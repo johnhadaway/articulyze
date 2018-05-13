@@ -10,7 +10,7 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <link rel="icon" href="../img/ICONS/glass.png">
     <?php
-    $db = new PDO("sqlite:current_unohca.db");
+    $db = new PDO("sqlite:current_unocha.db");
     $sql = 'SELECT * FROM cameroon WHERE days_in_db > (SELECT MAX(days_in_db) FROM cameroon) - 7 GROUP BY title ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
