@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Cameroon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- stylesheets -->
     <link rel="stylesheet" href = "../css/bootstrap.min.css">
     <link rel="stylesheet" href = "../css/bootstrap-grid.css">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href = "../css/art-country-style.css">
     <link rel="icon" href="../img/ICONS/glass.png">
     <?php
-    $db = new PDO("sqlite:current_unocha.db");
+    $db = new PDO("sqlite:current_unohca.db");
     $sql = 'SELECT * FROM cameroon WHERE days_in_db > (SELECT MAX(days_in_db) FROM cameroon) - 7 GROUP BY title ORDER BY score DESC';
     $result = $db->query($sql);
     $rowarray = $result->fetchall(PDO::FETCH_ASSOC);
@@ -38,10 +39,10 @@
       <div class="collapse navbar-collapse" id="art-navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../other-pages/countries.html">Countries</a>
+            <a class="nav-link" href="../countries.html">Countries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../other-pages/about.html">About</a>
+            <a class="nav-link" href="../about.html">About</a>
           </li>
         </ul>
       </div>
@@ -49,11 +50,11 @@
     <div class="container-fluid cameroon-div-page">
         <div class="row art-style-10-height"></div>
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 col-12 art-style-back-red art-container-country">
+            <div class="col-md-3 col-1"></div>
+            <div class="col-md-6 col-10 art-style-back-red art-container-country">
                 <p class="text-uppercase country-name-text art-unselectable">Cameroon</p>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3 col-1"></div>
         </div>
         <div class="row art-style-15-height"></div>
         <div class="row">

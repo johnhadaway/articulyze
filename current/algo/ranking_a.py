@@ -8,7 +8,7 @@ from nltk.tokenize import RegexpTokenizer
 import json
 from keras.models import model_from_json
 
-ds = pd.read_csv('data\pul_dset.csv')
+ds = pd.read_csv('data/pul_dset.csv')
 ds = ds.dropna()
 l_articles = ds['Text'].tolist() #for testing
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>CAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- stylesheets -->
     <link rel="stylesheet" href = "../css/bootstrap.min.css">
     <link rel="stylesheet" href = "../css/bootstrap-grid.css">
@@ -38,10 +39,10 @@
       <div class="collapse navbar-collapse" id="art-navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../other-pages/countries.html">Countries</a>
+            <a class="nav-link" href="../countries.html">Countries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../other-pages/about.html">About</a>
+            <a class="nav-link" href="../about.html">About</a>
           </li>
         </ul>
       </div>

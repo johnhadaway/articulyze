@@ -8,13 +8,13 @@ from nltk.tokenize import RegexpTokenizer
 import json
 from keras.models import model_from_json
 
-ds = pd.read_csv('data\pul_dset.csv')
+ds = pd.read_csv('data/pul_dset.csv')
 ds = ds.dropna()
 l_articles = ds['Text'].tolist() #for testing
 
-spache_words = json.load(open('data\spache_words.json'))
-dale_chall_words = json.load(open('data\dale_chall_words.json'))
-weasel_words = [word.strip() for word in open('data\weasel_phrases.txt').readlines()]
+spache_words = json.load(open('data/spache_words.json'))
+dale_chall_words = json.load(open('data/dale_chall_words.json'))
+weasel_words = [word.strip() for word in open('data/weasel_phrases.txt').readlines()]
 
 
 json_file = open('data_for_neural_net/model.json', 'r')
