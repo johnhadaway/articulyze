@@ -30,3 +30,7 @@ tenative launch date: april 27.
 # LONG TERM: note on things to do re algorithim (less important immediately): 
 try removing word count + scaling data 
 with removed word count in one node model, 79% accuracy.
+
+## NOTICE ### 
+
+Current is where the latest stuff will be stored. The outer directory is for testing. 
