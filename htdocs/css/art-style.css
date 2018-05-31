@@ -563,7 +563,7 @@ body {
 }
 
 .art-home-desc {
-    font-size: 18px;
+    font-size: 2.5vh;
 }
 
 .pattern-back {
@@ -584,14 +584,14 @@ body {
 .btn-secondary:focus {
     background-color: #FE3211;
     border-color: #FE3211;
-    font-size: 40px;
+    font-size: 7vh;
     opacity: 1.0;
 }
 
 .btn-secondary:hover{
     background-color: #282828;
     border-color: #282828;
-    font-size: 40px;
+    font-size: 7vh;
     opacity: 0.8;
 }
 
