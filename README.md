@@ -18,13 +18,12 @@ With 2 node output, accuracy 87%, 7 percent miss rate when applied to pulitzer-w
 the accurate is always 90%+, will test more in depth later
 
 ## 4/8/18: updates: website / scraping algorithim 
-scraping algorithim: now also gets article title 
-website: more design elements etc... waiting on website designer (my sister lol) to send  stuff
+scraping: now also retrieves article title 
 
 # 4/10/18: updates: 
-progress started on main_script -- will fix sql interaction soon / figure out how to link that w the website
-fixed other modules, ranking and scraping, to work with main_script 
-no progress on website - waiting on sister / busy w research this week. 
+progress started on main_script -- will fix sql interaction soon 
+fixed other modules, ranking and scraping. they should now work with main_script 
+no progress on website - busy w research this week. 
 tenative launch date: april 27. 
 
 # LONG TERM: note on things to do re algorithim (less important immediately): 
